@@ -6,7 +6,7 @@ import Spinner from '../layout/Spinner';
 
 export class Landing extends Component {
   render() {
-    const {loading} = this.props;
+    const { loading } = this.props;
     return (
       <div className="container">
         <SearchForm />
@@ -16,8 +16,8 @@ export class Landing extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  loadingState = state.movies.loading
-})
+const mapStateToProps = (state) => ({
+  loading: state.movies.loading,
+});
 
 export default connect(mapStateToProps)(Landing);
