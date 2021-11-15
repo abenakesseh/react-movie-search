@@ -33,7 +33,7 @@ export const fetchMovie = (id) => (dispatch) => {
     .catch((err) => console.log(err));
 };
 
-export const setLoadding = () => {
+export const setLoading = () => {
   return {
     type: LOADING,
   };

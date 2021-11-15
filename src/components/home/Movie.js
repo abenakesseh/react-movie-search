@@ -7,7 +7,7 @@ import Spinner from '../layout/Spinner';
 export class Movie extends Component {
   componentDidMount() {
     this.props.fetchMovie(this.props.match.params.id);
-    this.props.setLoading;
+    this.props.setLoading();
   }
   render() {
     const { loading, movie } = this.props;
